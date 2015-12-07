@@ -7,7 +7,7 @@ use Route;
 use SleepingOwl\Admin\ColumnFilters\Date;
 use SleepingOwl\Admin\Columns\Column\DateTime;
 use SleepingOwl\Admin\Columns\Column\NamedColumn;
-use SleepingOwl\Admin\Columns\Column\String;
+use SleepingOwl\Admin\Columns\Column\AdminString;
 use SleepingOwl\Admin\Interfaces\WithRoutesInterface;
 
 class DisplayDatatablesAsync extends DisplayDatatables implements WithRoutesInterface

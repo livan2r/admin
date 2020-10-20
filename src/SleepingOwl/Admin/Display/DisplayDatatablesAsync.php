@@ -165,7 +165,7 @@ class DisplayDatatablesAsync extends DisplayDatatables implements WithRoutesInte
 			$columns = $this->columns();
 			foreach ($columns as $column)
 			{
-				if ($column instanceof String)
+				if ($column instanceof \SleepingOwl\Admin\Columns\Column\AdminString)
 				{
 					$name = $column->name();
 					if ($this->repository->hasColumn($name))

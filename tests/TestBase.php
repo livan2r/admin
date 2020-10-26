@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 abstract class TestBase extends Orchestra\Testbench\TestCase
 {
@@ -28,7 +28,7 @@ abstract class TestBase extends Orchestra\Testbench\TestCase
 
 		$this->artisan('migrate', [
 			'--database' => 'testbench',
-			'--realpath' => realpath(__DIR__.'/../src/migrations'),
+			'--realpath' => realpath(__DIR__ . '/../src/migrations'),
 		]);
 		$this->artisan('migrate', [
 			'--database' => 'testbench',
@@ -52,4 +52,4 @@ abstract class TestBase extends Orchestra\Testbench\TestCase
 		]);
 	}
 
-} 
+}

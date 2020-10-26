@@ -47,15 +47,15 @@ class AdminServiceProvider extends ServiceProvider
 		$this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'admin');
 
 		$this->publishes([
-			__DIR__ . '/../../config/config.php' => config_path('admin.php'),
+            __DIR__ . '/../../config/config.php' => config_path('admin.php'),
 		], 'config');
 
 		$this->publishes([
-			__DIR__ . '/../../migrations/' => base_path('/database/migrations'),
+            __DIR__ . '/../../migrations/' => base_path('/database/migrations'),
 		], 'migrations');
 
 		$this->publishes([
-			__DIR__ . '/../../../public/' => public_path('packages/sleeping-owl/admin/'),
+            __DIR__ . '/../../../public/' => public_path('packages/sleeping-owl/admin/'),
 		], 'assets');
 
 		app('SleepingOwl\Admin\Helpers\StartSession')->run();
